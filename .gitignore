@@ -1,0 +1,26 @@
+cat > .gitignore <<'EOF'
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.env
+.env.*
+
+# macOS
+.DS_Store
+
+# Datasets
+data/raw/
+data/processed/
+
+# Model checkpoints
+checkpoints/
+*.safetensors
+*.pt
+*.pth
+
+# Experiment artifacts
+wandb/
+runs/
+results/checkpoints/
+EOF
